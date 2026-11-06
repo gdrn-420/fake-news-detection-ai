@@ -50,44 +50,48 @@ st.write(
 st.markdown("""
 <style>
 .stApp {
-    background: #090909;
-    color: #F5F5F5;
+    background: linear-gradient(135deg, #080808, #191408);
+    color: #ffffff;
+}
+
+[data-testid="stHeader"] {
+    background: transparent;
 }
 
 h1, h2, h3 {
-    color: #D4AF37 !important;
+    color: #FFD700 !important;
 }
 
-p, label, span {
-    color: #E6E6E6;
-}
-
-.stTextArea textarea {
-    background-color: #171717;
-    color: white;
-    border: 1px solid #D4AF37;
-    border-radius: 12px;
-}
-
-.stButton > button {
-    background: linear-gradient(90deg, #B8860B, #FFD700);
-    color: black;
-    border: none;
-    border-radius: 10px;
-    font-weight: bold;
-    padding: 10px 25px;
-}
-
-.stButton > button:hover {
-    border: 1px solid white;
-    color: black;
+[data-testid="stMarkdownContainer"] p {
+    color: #eeeeee;
 }
 
 [data-testid="stMetric"] {
-    background: #171717;
-    border: 1px solid #B8860B;
-    padding: 18px;
+    background: #201b0b;
+    border: 1px solid #D4AF37;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.stTextArea textarea,
+.stTextInput input {
+    background: #171717 !important;
+    color: white !important;
+    border: 1px solid #D4AF37 !important;
+}
+
+.stButton button {
+    background: linear-gradient(90deg, #B8860B, #FFD700);
+    color: #000000 !important;
+    border: none;
     border-radius: 12px;
+    font-weight: bold;
+}
+
+.stButton button:hover {
+    background: #FFE55C;
+    color: black !important;
+    border: 1px solid #ffffff;
 }
 </style>
 """, unsafe_allow_html=True)
