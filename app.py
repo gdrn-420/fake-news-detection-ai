@@ -9,7 +9,11 @@ import streamlit as st
 ROOT = Path(__file__).resolve().parent
 MODEL_PATH = ROOT / "fake_news_pipeline.joblib"
 
-st.set_page_config(page_title="Fake News Detection", page_icon="📰", layout="centered")
+st.set_page_config(
+    page_title="Fake News Detection AI",
+    page_icon="📰",
+    layout="wide"
+)
 st.title("📰 Fake News Detection")
 st.write("Paste a headline or short news text to see the model's predicted writing-pattern label.")
 
@@ -43,3 +47,47 @@ st.write(
     "- A REAL label does not prove a story is true, and a FAKE label does not prove it is false.\n"
     "- Verify important claims with multiple reliable sources and official statements."
 )
+st.markdown("""
+<style>
+.stApp {
+    background: #090909;
+    color: #F5F5F5;
+}
+
+h1, h2, h3 {
+    color: #D4AF37 !important;
+}
+
+p, label, span {
+    color: #E6E6E6;
+}
+
+.stTextArea textarea {
+    background-color: #171717;
+    color: white;
+    border: 1px solid #D4AF37;
+    border-radius: 12px;
+}
+
+.stButton > button {
+    background: linear-gradient(90deg, #B8860B, #FFD700);
+    color: black;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 10px 25px;
+}
+
+.stButton > button:hover {
+    border: 1px solid white;
+    color: black;
+}
+
+[data-testid="stMetric"] {
+    background: #171717;
+    border: 1px solid #B8860B;
+    padding: 18px;
+    border-radius: 12px;
+}
+</style>
+""", unsafe_allow_html=True)
