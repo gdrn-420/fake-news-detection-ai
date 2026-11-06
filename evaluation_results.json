@@ -1,0 +1,18 @@
+{
+  "train_rows": 90,
+  "test_rows": 30,
+  "accuracy": 1.0,
+  "precision_fake": 1.0,
+  "recall_fake": 1.0,
+  "f1_fake": 1.0,
+  "confusion_matrix_fake_real": [
+    [
+      15,
+      0
+    ],
+    [
+      0,
+      15
+    ]
+  ]
+}
