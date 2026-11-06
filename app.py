@@ -49,9 +49,11 @@ st.write(
 )
 st.markdown("""
 <style>
-.stApp {
-    background: linear-gradient(135deg, #080808, #191408);
-    color: #ffffff;
+.stApp,
+[data-testid="stAppViewContainer"],
+[data-testid="stMain"] {
+    background: #080808 !important;
+    color: #ffffff !important;
 }
 
 [data-testid="stHeader"] {
