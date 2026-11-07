@@ -14,7 +14,17 @@ st.set_page_config(
     page_icon="📰",
     layout="wide"
 )
-st.title("📰 Fake News Detection")
+st.markdown("""
+<div style="text-align:center; padding:25px;">
+    <h1 style="color:#00C8FF; font-size:42px;">
+        ◈ FAKE NEWS DETECTION AI
+    </h1>
+    <p style="color:#9CCFEA; font-size:16px;">
+        INTELLIGENT NEWS ANALYSIS SYSTEM
+    </p>
+    <hr style="border:1px solid #00C8FF;">
+</div>
+""", unsafe_allow_html=True)
 st.write("Paste a headline or short news text to see the model's predicted writing-pattern label.")
 
 if not MODEL_PATH.exists():
